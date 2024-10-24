@@ -13,7 +13,7 @@ def setUp(request):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     # Initialize the Chrome driver
-    driver = webdriver.Chrome()  # Add the path to ChromeDriver if necessary)
+    driver = webdriver.Chrome(service=Service(), options=chrome_options)  # Add the path to ChromeDriver if necessary)
     driver.get("https://www.google.com/finance/")
     driver.maximize_window()
     request.cls.driver=driver
