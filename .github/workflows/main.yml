@@ -45,9 +45,9 @@ jobs:
 
     - name: Run Tests Based on Input
       run: |
-        if [ "${{ github.event.inputs.run_mode }}" == "full" ]; then
+        if [ "${{ github.event.inputs.run_mode }}" = "full" ]; then
           pytest pytestAssignmentGoogleFinance/test_stockComparison.py pytestAssignmentGoogleFinance/test_titleCheck.py
-        elif [ "${{ github.event.inputs.run_mode }}" == "stock_comparison" ]; then
+        elif [ "${{ github.event.inputs.run_mode }}" = "stock_comparison" ]; then
           pytest pytestAssignmentGoogleFinance/test_stockComparison.py
 
       env:
