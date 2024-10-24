@@ -1,15 +1,12 @@
 import time
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
 from utilities.BaseClass import BaseClass
-
 
 class TestOne(BaseClass):
 #2.Verifies the page is loaded by asserting the page title
-
+    @pytest.mark.order(1)
     def test_titleCheck(self):
 
         title_text = self.driver.title
