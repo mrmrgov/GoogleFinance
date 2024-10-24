@@ -10,8 +10,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture(scope="class")
 def setUp(request):
+    # options = Options()
+    # options.binary_location = "C:\\Program Files\\Chrome\\chrome64_55.0.2883.75\\chrome.exe"
+    # driver = webdriver.Chrome(chrome_options=options, executable_path=r'C:\path\to\chromedriver.exe')
+    # driver.get('http://google.com/')
+    # print("Chrome Browser Invoked")
+    # driver.quit()
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.binary_location = "/c/Program Files/Google/Chrome/Application"  # Replace with your Chrome path
+    chrome_options.binary_location = "C:\\Program Files\\Google\Chrome\\Application"  # Replace with your Chrome path
     #chrome_options = Options()
     chrome_options.add_argument("--headless")  # Uncomment if needed
     chrome_options.add_argument("--no-sandbox")
