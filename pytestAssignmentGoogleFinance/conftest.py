@@ -17,7 +17,7 @@ def setUp(request):
     # print("Chrome Browser Invoked")
     # driver.quit()
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.binary_location = "C:\\Program Files\\Google\Chrome\\Application"  # Replace with your Chrome path
+    #chrome_options.binary_location = "C:\\Program Files\\Google\Chrome\\Application"  # Replace with your Chrome path
     #chrome_options = Options()
     chrome_options.add_argument("--headless")  # Uncomment if needed
     chrome_options.add_argument("--no-sandbox")
