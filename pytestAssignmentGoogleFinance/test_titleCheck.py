@@ -8,6 +8,7 @@ from utilities.BaseClass import BaseClass
 
 
 class TestOne(BaseClass):
+#2.Verifies the page is loaded by asserting the page title
 
     def test_titleCheck(self):
 

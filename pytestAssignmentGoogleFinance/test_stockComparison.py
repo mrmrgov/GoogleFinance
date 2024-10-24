@@ -7,7 +7,7 @@ from utilities.BaseClass import BaseClass
 
 class TestTwo(BaseClass):
 
-
+#locate the "you may be interested in" text
     def test_symbolComparison(self):
         time.sleep(10)
         section = self.driver.find_element(By.XPATH,"//div[contains(text(),'You may be interested in')]/following-sibling::div")
